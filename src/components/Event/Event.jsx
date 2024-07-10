@@ -1,6 +1,6 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, memo } from "react";
 
-function Event(props) {
+const Event = memo((props) => {
 	const ref = useRef();
 
 	const { onSize } = props;
@@ -28,6 +28,6 @@ function Event(props) {
 			</button>
 		</li>
 	);
-}
+});
 
 export default Event;
