@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import { TABS, TABS_KEYS } from "./data";
-import Event from "./Event.jsx";
+import { useEffect, useRef, useState } from "react";
+import { TABS, TABS_KEYS } from "../../data";
+import Event from "../Event/Event.jsx";
 
 function Main() {
 	const ref = useRef();
